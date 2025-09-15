@@ -42,4 +42,36 @@ fun main() {
     println(x)
     x = 1_000_000 * 3_000
     print(x)
+
+//    Meaningful Names -> nama variabel yang tidak boleh sembarangan
+//    1. Good Meaningful Names
+//    personAge
+//    numberOfPeople
+//    grade
+//    2. Bad Meaningful Names
+//    a
+//    temp
+//    average
+
+//    Increment dan Decrement
+    var counter: Int = 0
+    counter += 1 // sama saja dengan counter = counter + 1
+    println(counter)
+    counter -= 4 // sama saja dengan counter = counter - 1
+    println(counter)
+    counter /= 8
+    println(counter)
+    counter *= 7
+
+//    ani membeli 7 buku, tiap buku harganya Rp.50.000. Toko memberi dikson 15%. Buatlah program kotlin untuk menghitung total harga yang harus dibayar ani
+  val buku: Int = 7
+  val subTotal: Int = buku * 50000
+  val diskon: Double = subTotal * 0.15
+  val totalHarga: Double = subTotal - diskon
+    println("Jumlah Bayar : $totalHarga")
+
+//
+
+
+
 }
