@@ -85,4 +85,31 @@ fun countingLambda(): () -> Int {
         it * 8.9
     }
     println(salePrices)
+
+    val userInput = listOf("0", "11", "haha", "42")
+    val numbers = userInput.map {
+        it.toIntOrNull()
+    }
+    print(numbers)
+
+    val numbers2 = userInput.mapNotNull {
+        it.toIntOrNull()
+    }
+    println(numbers2)
+
+//    fungsi fold
+    var sum = prices.fold(0.0) {a, b -> a + b}
+    println(sum)
+
+//    fungsi reduce
+    sum = prices.reduce{a, b -> a + b}
+    println(sum)
+
+//    Hitung harga total stok
+    val stock = mapOf(1500 to 5, 10000 to 2, 4990 to 20, 23000 to 5, 8190 to 30)
+    var stockSum = 0
+    stock.forEach {
+        stockSum += it.key * it. value
+    }
+    println(stockSum)
 }
